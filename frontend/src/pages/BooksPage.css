@@ -1,0 +1,67 @@
+/* BooksPage Styles */
+.books-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+}
+
+.page-subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0 0 32px 0;
+}
+
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Status boxes for loading, error, and empty states */
+.status-box {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 40px;
+  text-align: center;
+  font-size: 1rem;
+  color: #4a5568;
+}
+
+.loading-box {
+  border-color: #bee3f8;
+  background: #ebf8ff;
+  color: #2b6cb0;
+}
+
+.error-box {
+  border-color: #feb2b2;
+  background: #fff5f5;
+  color: #c53030;
+}
+
+.spinner {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 12px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.status-box small {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.82rem;
+  opacity: 0.75;
+}

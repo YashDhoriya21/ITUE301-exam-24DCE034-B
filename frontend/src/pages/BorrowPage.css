@@ -1,0 +1,207 @@
+/* BorrowPage Styles */
+.borrow-page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 8px 0;
+}
+
+.page-subtitle {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0 0 32px 0;
+}
+
+.borrow-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: start;
+}
+
+@media (max-width: 700px) {
+  .borrow-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Form ──────────────────────────────────────────────────────────────────── */
+.borrow-form {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #4a5568;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-input {
+  padding: 10px 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  color: #1a202c;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  background: #f7fafc;
+}
+
+.form-input:focus {
+  border-color: #3182ce;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.15);
+  background: #ffffff;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.btn-submit {
+  flex: 1;
+  background: #3182ce;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-submit:hover {
+  background: #2b6cb0;
+  transform: translateY(-1px);
+}
+
+.btn-reset {
+  background: transparent;
+  color: #718096;
+  border: 1px solid #e2e8f0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-reset:hover {
+  background: #f7fafc;
+}
+
+/* ── Preview Card ──────────────────────────────────────────────────────────── */
+.borrow-preview {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 28px;
+}
+
+.borrow-preview h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 6px 0;
+}
+
+.preview-note {
+  font-size: 0.82rem;
+  color: #a0aec0;
+  margin: 0 0 20px 0;
+}
+
+.preview-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.preview-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f4f8;
+}
+
+.preview-row:last-child {
+  border-bottom: none;
+}
+
+.preview-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.preview-value {
+  font-size: 0.9rem;
+  color: #1a202c;
+  font-weight: 500;
+}
+
+.placeholder {
+  color: #cbd5e0;
+  font-style: italic;
+}
+
+.status-badge {
+  background: #ebf8ff;
+  color: #2b6cb0;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  border: 1px solid #bee3f8;
+}
+
+/* ── Success Box ─────────────────────────────────────────────────────────── */
+.success-box {
+  margin-top: 20px;
+  background: #f0fff4;
+  border: 1px solid #9ae6b4;
+  border-radius: 8px;
+  padding: 20px;
+  color: #276749;
+}
+
+.success-box h4 {
+  margin: 0 0 10px 0;
+  font-size: 1rem;
+}
+
+.success-box p {
+  margin: 0 0 6px 0;
+  font-size: 0.9rem;
+}
+
+.success-box .btn-reset {
+  margin-top: 12px;
+  color: #276749;
+  border-color: #9ae6b4;
+}

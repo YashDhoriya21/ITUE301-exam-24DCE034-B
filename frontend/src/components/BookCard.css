@@ -1,0 +1,67 @@
+/* BookCard Styles — Task 1 */
+.book-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.book-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.book-category {
+  background: #ebf4ff;
+  color: #3182ce;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.book-availability {
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+/* Available — green badge */
+.book-availability.available {
+  background: #f0fff4;
+  color: #276749;
+  border: 1px solid #9ae6b4;
+}
+
+/* Not Available — red badge */
+.book-availability.unavailable {
+  background: #fff5f5;
+  color: #c53030;
+  border: 1px solid #feb2b2;
+}
+
+.book-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 6px 0;
+  line-height: 1.4;
+}
+
+.book-author {
+  font-size: 0.9rem;
+  color: #718096;
+  margin: 0;
+}
